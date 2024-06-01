@@ -1,0 +1,23 @@
+# Gradle files
+.gradle/
+build/
+
+# Compiled Kotlin files
+bin/
+out/
+
+# Log files
+*.log
+
+# IDE-specific files
+*.DS_Store
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Miscellaneous
+*.class
+*.jar
+*.zip
+*.apk
