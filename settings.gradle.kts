@@ -1,3 +1,6 @@
 rootProject.name = "craftsman"
 
-include("appium-core", "appium-test")
+val appiumCoreProject: String by settings
+val appiumTestProject: String by settings
+
+include(appiumCoreProject, appiumTestProject)

@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="AppiumTestSuite" parallel="tests" thread-count="2">
+    <!-- Android Test Configuration -->
+    <test name="AndroidTest1">
+        <parameter name="settingsPath" value="resources/android/android_device1.json"/>
+        <classes>
+            <class name="LoginTest"/>
+        </classes>
+    </test>
+    <test name="AndroidTest2">
+        <parameter name="settingsPath" value="resources/android/android_device2.json"/>
+        <classes>
+            <class name="LoginTest"/>
+        </classes>
+    </test>
+
+    <!-- iOS Test Configuration -->
+    <test name="iOSTest1">
+        <parameter name="settingsPath" value="resources/ios/ios_device1.json"/>
+        <classes>
+            <class name="LoginTest"/>
+        </classes>
+    </test>
+    <test name="iOSTest2">
+        <parameter name="settingsPath" value="resources/ios/ios_device2.json"/>
+        <classes>
+            <class name="LoginTest"/>
+        </classes>
+    </test>
+</suite>
